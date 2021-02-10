@@ -45,7 +45,7 @@ body
 .start_scene{
   visibility: hidden;
   transform: translateX(-20%);
-  transition: all 3s ;
+  transition: visibility 4s, transform 4s ;
   will-change: visibility, transform;
 }
 
@@ -54,6 +54,46 @@ body
   transform: translateX(0%);
  
 }
+
+#playbut {
+  z-index: 5;
+    position: fixed;
+    left: 85px;
+    bottom: 85px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline:none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 3s ;  
+  }
+
+  #playbut.stared{
+    visibility: visible;
+     opacity: 1;
+  }
+
+
+#play{
+  position: fixed;
+  left: 85px;
+  bottom: 85px;
+  width: 40px;
+  height: 40px;
+  visibility:hidden;
+}
+ #paused{
+  position: fixed;
+  left: 85px;
+  bottom: 85px;
+  width: 40px;
+  height: 40px;
+  visibility:visible;
+}
+
 .back{
   position: relative;
   background:rgba(255, 255, 255, 0);
@@ -174,14 +214,13 @@ body
     border: 2.5px solid #FFFFFF;
     opacity: 0;
     transform: translateX(-30%);
-    transition: all 2s ;
+    transition: opacity 2s, transform 2s ;
     will-change: opacity, transform;
   }
   #start_cmd:hover {
     background-color:#FFFFFF;
     border: 3px solid #FFFFFF;
     color: black;
-    mix-blend-mode: screen;
   }
 
   #start_cmd.is-visible{
@@ -190,18 +229,7 @@ body
     transition-delay: 0.3s;
   }
 
-
-
-
-#playbut {
-  z-index: 5;
-    position: fixed;
-    left: 85px;
-    bottom: 85px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-  }
+  
  
   .scroll-right {
     z-index: 0;
