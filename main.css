@@ -1,0 +1,263 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0000cc+0,3300cc+26,6600cc+49,9900cc+75,cc00cc+93 */
+/* background: #0000cc; /* Old browsers */
+/*background: -moz-linear-gradient(45deg,  #0000cc 0%, #3300cc 26%, #6600cc 49%, #9900cc 75%, #cc00cc 93%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(45deg,  #0000cc 0%,#3300cc 26%,#6600cc 49%,#9900cc 75%,#cc00cc 93%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(45deg,  #0000cc 0%,#3300cc 26%,#6600cc 49%,#9900cc 75%,#cc00cc 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000cc', endColorstr='#cc00cc',GradientType=1 ); IE6-9 fallback on horizontal gradient */
+
+
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+.gifStart{
+  position: absolute;
+  width:200px;
+  height:200px;
+  overflow: hidden;
+  display: flex;
+  top: 45%;
+  left: 45%;
+  
+}
+.gifStart.ended{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 0.8s linear;
+}
+
+.start_scene{
+  visibility: hidden;
+  transform: translateX(-20%);
+  transition: all 3s ;
+  will-change: visibility, transform;
+}
+
+.start_scene.stared{
+  visibility: visible;
+  transform: translateX(0%);
+ 
+}
+.back{
+  position: relative;
+  background:rgba(255, 255, 255, 0);
+  background-size: cover; 
+  background-size: 100% 100%;
+}
+.wrapper {
+  display: grid;
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows:repeat(20, 80px);
+  grid-gap: 16px 16px;
+
+}
+.wrapper > div {
+  z-index: 1;
+}
+.wrapper > div:nth-child(1) {
+  grid-column: 1 / span 12;
+}
+.wrapper > div:nth-child(2) {
+  grid-column: 3 / span 4;
+  grid-row: 3 / span 1 ;
+}
+.wrapper > div:nth-child(3) {
+  grid-column: 3 / span 3;
+  grid-row: 4 / span 1 ;
+  }
+.wrapper > div:nth-child(4) {
+  grid-column: 8 / span 3;
+  grid-row: 9 / span 1 ;
+}
+.wrapper > div:nth-child(5) {
+  grid-column: 8 / span 3;
+  grid-row: 10 / span 1 ;
+}
+.wrapper > div:nth-child(6) {
+  grid-column: 5 / span 3;
+  grid-row: 14 / span 1 ;
+}
+.wrapper > div:nth-child(7) {
+  grid-column: 5 / span 4;
+  grid-row: 15 / span 1 ;
+}
+.wrapper > div:nth-child(8) {
+  grid-column: 3 / span 3;
+  grid-row: 18 / span 2 ;
+}
+.wrapper > div:nth-child(9) {
+  grid-column: 9 / span 5;
+  grid-row: 19 / span 1 ;
+}
+
+.headers{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  color: #FFFFFF;
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: all 2s ;
+  will-change: opacity, transform;
+}
+
+.headers.is-visible {
+  opacity: 1;
+  transform: translateX(0%) ;
+}
+
+
+.Details{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 1s ;
+  transition-timing-function: ease-out;
+  transition-delay: 0.7s;
+  will-change: opacity, transform;
+}
+
+.Details.is-visible {
+  opacity: 1;
+  transform: translateY(0%) ;
+}
+
+
+.excited{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  opacity: 0;
+  transform: translateX(20%);
+  transition: all 2s ;
+  will-change: opacity, transform;
+}
+
+.excited.is-visible{
+  opacity: 1;
+  transform: translateX(0%) ;
+}
+
+  #start_cmd {
+    margin: 30px auto 0px auto;
+    font-family: 'Syncopate', sans-serif;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    height: 60px;
+    outline: none;
+    color: #FFFFFF;
+    background-color:rgba(255, 255, 255, 0.137);
+    border: 2.5px solid #FFFFFF;
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: all 2s ;
+    will-change: opacity, transform;
+  }
+  #start_cmd:hover {
+    background-color:#FFFFFF;
+    border: 3px solid #FFFFFF;
+    color: black;
+    mix-blend-mode: screen;
+  }
+
+  #start_cmd.is-visible{
+    opacity: 1;
+    transform: translateX(0%);
+    transition-delay: 0.3s;
+  }
+
+
+
+
+#playbut {
+  z-index: 5;
+    position: fixed;
+    left: 85px;
+    bottom: 85px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+ 
+  .scroll-right {
+    z-index: 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70px;	
+    overflow: hidden;
+   
+   
+  }
+
+.scroll-right p {
+  position: absolute;
+ overflow: hidden;
+ white-space:nowrap;
+ width: 130%;
+ height: 100%;
+ font-family: 'Syncopate', sans-serif;
+ font-size: 70px;
+ color:rgba(255, 255, 255, 0.027);
+ -webkit-text-stroke-width: 3px;
+ -webkit-text-stroke-color: white;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(-100%);
+ -webkit-transform:translateX(-100%);	
+ transform:translateX(-100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-right 40s linear infinite;
+ -webkit-animation: scroll-right 40s linear infinite;
+ animation: scroll-right 40s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-right {
+ 0%   { -moz-transform: translateX(-100%); }
+ 100% { -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes scroll-right {
+ 0%   { -webkit-transform: translateX(-100%); }
+ 100% { -webkit-transform: translateX(100%); }
+}
+@keyframes scroll-right {
+ 0%   { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 
+ }
+}
+
+
+       
+
+/*# sourceMappingURL=main.css.map*/

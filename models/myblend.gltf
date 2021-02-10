@@ -1,0 +1,545 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.4.40",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "extensionsRequired" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube",
+            "translation" : [
+                2.8783674240112305,
+                1.5267446041107178,
+                0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "CREATURlee",
+            "rotation" : [
+                0.615176796913147,
+                0,
+                0,
+                0.7883892059326172
+            ],
+            "scale" : [
+                0.12544125318527222,
+                0.12544125318527222,
+                0.12544125318527222
+            ],
+            "translation" : [
+                7.220921039581299,
+                2.3890132904052734,
+                -0.9951972961425781
+            ]
+        },
+        {
+            "mesh" : 2,
+            "name" : "CREATURlee1",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.10938853025436401,
+                0.10938853025436401,
+                0.10938853025436401
+            ],
+            "translation" : [
+                -4.538926124572754,
+                2.4457597732543945,
+                -3.83095645904541
+            ]
+        },
+        {
+            "mesh" : 3,
+            "name" : "CREATURlee2",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.09890515357255936,
+                0.09890515357255936,
+                0.09890515357255936
+            ],
+            "translation" : [
+                2.328490734100342,
+                2.6776719093322754,
+                -0.16080403327941895
+            ]
+        },
+        {
+            "mesh" : 4,
+            "name" : "CREATURlee2_1",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.13834106922149658,
+                0.13834106922149658,
+                0.13834106922149658
+            ],
+            "translation" : [
+                3.8660728931427,
+                4.775444507598877,
+                -3.6079046726226807
+            ]
+        },
+        {
+            "mesh" : 5,
+            "name" : "CREATURlee2_2",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.0967402458190918,
+                0.0967402458190918,
+                0.0967402458190918
+            ],
+            "translation" : [
+                -1.2175484895706177,
+                5.765028953552246,
+                -9.114431381225586
+            ]
+        },
+        {
+            "mesh" : 6,
+            "name" : "Cube.001",
+            "translation" : [
+                3.3647706508636475,
+                4.820971488952637,
+                -2.8886985778808594
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.021980324760079384,
+                    0.021980324760079384,
+                    0.021980324760079384,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.280927836894989
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 0,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 3,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "CREATURlee",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 1,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 6,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "CREATURlee1",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 7,
+                        "NORMAL" : 8
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 2,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 9,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "CREATURlee2",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 10,
+                        "NORMAL" : 11
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 3,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 12,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "CREATURlee2_1",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 13,
+                        "NORMAL" : 14
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 4,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 9,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "CREATURlee2_2",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 15,
+                        "NORMAL" : 16
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 5,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1
+                            }
+                        }
+                    },
+                    "indices" : 9,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Cube.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 17,
+                        "NORMAL" : 18,
+                        "TEXCOORD_0" : 19
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 6,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 3,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "componentType" : 5126,
+            "count" : 1651,
+            "max" : [
+                0.5621901750564575,
+                0.31969398260116577,
+                0.6712281703948975
+            ],
+            "min" : [
+                -1.044258952140808,
+                -0.9097731113433838,
+                -0.770606279373169
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1651,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1651,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 9216,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 4780032,
+            "max" : [
+                -1.1858923435211182,
+                36.616607666015625,
+                16.016433715820312
+            ],
+            "min" : [
+                -129.0901641845703,
+                -58.918460845947266,
+                -52.841190338134766
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 4780032,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5125,
+            "count" : 7170048,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 89346,
+            "max" : [
+                10.746037483215332,
+                2.511910915374756,
+                6.798349380493164
+            ],
+            "min" : [
+                -6.965677738189697,
+                -5.171792030334473,
+                -11.829541206359863
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 89346,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5125,
+            "count" : 536064,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1538,
+            "max" : [
+                -2.7154998779296875,
+                -8.668171882629395,
+                6.00960111618042
+            ],
+            "min" : [
+                -7.192556381225586,
+                -13.961700439453125,
+                1.1346240043640137
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1538,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 9216,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 89346,
+            "max" : [
+                4.732503890991211,
+                2.8296072483062744,
+                4.201137542724609
+            ],
+            "min" : [
+                -4.670089244842529,
+                -1.9786312580108643,
+                -5.966496467590332
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 89346,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 89346,
+            "max" : [
+                5.190062046051025,
+                2.0110995769500732,
+                6.8530659675598145
+            ],
+            "min" : [
+                -2.7661051750183105,
+                -1.9943923950195312,
+                -1.6168797016143799
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 89346,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1651,
+            "max" : [
+                0.4539540708065033,
+                0.2676754593849182,
+                -0.1515679806470871
+            ],
+            "min" : [
+                0.13780713081359863,
+                -0.07417461276054382,
+                -0.4340446889400482
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1651,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1651,
+            "type" : "VEC2"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 10578,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12121159,
+            "byteOffset" : 10580
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 233975,
+            "byteOffset" : 12131740
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9220,
+            "byteOffset" : 12365716
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 236834,
+            "byteOffset" : 12374936
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 227988,
+            "byteOffset" : 12611772
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 10690,
+            "byteOffset" : 12839760
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 12850452,
+            "uri" : "myblend.bin"
+        }
+    ]
+}
